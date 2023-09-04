@@ -7,8 +7,8 @@ export const Home = () =>{
    
     return (       
         // aqui dentro vamos colocar nosso JSX
-        <div className={style.Content}> 
-            <h1>Bem vindo a pagina home </h1>
+        <div className={style.Content}>             
+            <Header />
         </div>        
     )
 }

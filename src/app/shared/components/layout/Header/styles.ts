@@ -3,7 +3,7 @@ import { Environment } from "../../../environment";
 export const styles = ({
   container: {
     width: '100%',
-    height: '25%',
+    height: 300,
     backgroundColor: Environment.COLOR_SECONDARY
   },
   headerContent: {
@@ -24,6 +24,20 @@ export const styles = ({
     width: 20,
     height: 20,
     marginRight: 10
+  },
+  HeaderContent: {
+    width: '100%',     
+  },
+  ImgArea: {
+    
+  },
+  img:{
+
+  },
+  menuArea:{
+    width: '100%',
+    heigth: 35,
+    bacgroundColor: Environment.COLOR_TERTIARY
   }
 });
 
