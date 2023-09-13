@@ -11,6 +11,7 @@ import iconBack from './iconBack.png'
 import iconNext from './iconNext.png'
 import iconRecolher from './iconRecolher.png'
 import iconIndicador from './iconIndicador.png'
+import iconMenu from './iconMenu.png'
 
 export const icons = {
     BussinessLogo, 
@@ -25,6 +26,7 @@ export const icons = {
     iconBack,
     iconNext,
     iconRecolher,
-    iconIndicador
+    iconIndicador,
+    iconMenu
 }
 
