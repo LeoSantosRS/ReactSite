@@ -6,8 +6,11 @@ import { ButtonActionMini } from '../../buttons/actionMini/ButtonActionMini'
 import { Menu } from '../Menu/Menu'
 import { ItemMenu } from '../Menu/ItemMenu'
 import { ButtonMenu } from '../../buttons/buttonMenu/ButtonMenu'
+import { useState } from 'react'
 
 export const Header = () =>{  
+
+  const [viewSideMenu, setViewSideMenu] = useState(false);
   
   const handleFoneClick = () => {
     alert('Fone');
@@ -26,12 +29,14 @@ export const Header = () =>{
   }
 
   const handleYoutubeClick = () => {
-    alert('Youtube');
+    alert('Youtube');   
   }
 
   const handleClickMenu = () => {
-    alert('Menu');
+    setViewSideMenu(!viewSideMenu);
   }
+
+
 
 
 
@@ -59,7 +64,9 @@ export const Header = () =>{
         </div>
         <div className={style.MenuItensArea}>
           <Menu /> 
-        </div>        
+        </div> 
+        {viewSideMenu ? <Menu /> : null}
+
       </div>
       <div className={style.ImgArea}>
         <img className={style.Img} src={icons.BackgroudHeader} alt=''></img>   

@@ -1,6 +1,8 @@
+
+
 .Container{
     width: 100%;
-    height: 250px;
+    height: 150px;
     background-color: black;
 }
 .SocialMediasArea{
@@ -13,12 +15,15 @@
 }
 .BussinessLogoArea{
     width: 100%;
-    height: 210px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 3;
+}
+.BussinessLogo{
+    height: 50%;
 }
 .ImgArea{
     width: 100%;
@@ -39,11 +44,11 @@
 
 .MenuBackGroundArea{
     width: 100%;
-    height: 40px;
+    height: 25px;
     background-color: red;
     position: absolute;
     z-index: 0;
-    margin-top: 8.7%;
+    margin-top: 9.2%;
 }
 .MenuArea{
     display: flex;
@@ -62,3 +67,102 @@
     justify-content: center;    
     
 }
+
+@media screen and (max-width: 768px) {
+    .MenuArea{
+        display: block;
+        margin-top: 5%;
+    }
+    .MenuBackGroundArea{
+        display: none;
+    }  
+    .Container{
+        height: 80px;
+    }  
+    .BussinessLogoArea{
+        height: 80px;
+    }
+    .MenuButtonArea{
+        display: block;
+    }
+    .MenuItensArea{
+        display: none;
+        margin: 0;
+        width: 100%;
+    }
+ 
+    
+}
+
+@media screen and (min-width: 1600px) {
+    .Container{
+        height: 150px;
+    }
+    .BussinessLogoArea{
+        height: 150px;
+    }
+    .MenuBackGroundArea{
+        height: 30px;
+        margin-top: 9%;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .Container{
+        height: 150px;
+    }
+    .BussinessLogoArea{
+        height: 150px;
+    }
+    .MenuBackGroundArea{
+        height: 30px;
+        margin-top: 9%;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .Container{
+        height: 200px;
+    }
+    .BussinessLogoArea{
+        height: 200px;
+    }
+    .MenuBackGroundArea{
+        height: 30px;
+        margin-top: 9%;
+    }
+
+}
+
+@media screen and (min-width: 2560px) {
+    .Container{
+        height: 300px;
+    }
+    .BussinessLogoArea{
+        height: 300px;
+    }
+    .MenuBackGroundArea{
+        height: 40px;
+        margin-top: 10.2%;
+    }
+
+}
+
+@media screen and (min-width: 3860px) {
+    .Container{
+        height: 400px;
+    }
+    .BussinessLogoArea{
+        height: 400px;
+    }
+    .MenuBackGroundArea{
+        height: 60px;
+        margin-top: 9%;
+    }
+
+}
+
+
+

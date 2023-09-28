@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;  
-    height: 40px;  
+  
 }
 
 .ItemMenuContent {
@@ -17,8 +17,64 @@
 
 .ItemMenuContent span{
     color: white;
-    font-size: 22px; 
+    font-size: 14px; 
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
+
+@media  screen and (max-width: 768px) {
+    .MenuContent{
+        display: block;
+        width: 100%;       
+        background-color: #1A1A1A;
+                
+    }
+    .ItemMenuContent{
+        margin-right: 0px;
+        border-bottom: 1px solid white;
+        height: 35px;
+    } 
+}
+
+@media screen and (min-width: 1366px) {
+    .MenuContent{
+        height: 25px;
+        margin-top: 6px;
+    }   
+}
+
+@media screen and (min-width: 1920px) {
+  
+    .MenuContent{
+        height: 30px;
+        margin-top: 6px;
+         
+    }
+    .ItemMenuContent{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+  
+    .MenuContent{
+        height: 40px;
+        margin-top: 40px;
+    }
+    .ItemMenuContent span{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 3860px) {
+  
+    .MenuContent{
+        height: 50px;
+        margin-top: 20px;
+    }
+    .ItemMenuContent span{
+        font-size: 25px;
+    }
+}
+
